@@ -1,0 +1,110 @@
+/* Center the heading */
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #65a4b3;
+  text-shadow: 0 0 10px rgba(61, 147, 162, 0.7);
+  width: 100%;
+  background-color: #0a0a0a;
+  padding: 20px 0;
+}
+
+/* Main Section */
+.internshipSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  width: 100%;
+  background-color: #0a0a0a; /* Ensure full black background */
+}
+
+.internshipSection:hover{
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(47, 134, 140, 0.5);
+}
+
+/* Remove any unwanted background color */
+.internshipContainer {
+  width: 100%;
+  max-width: 1200px;
+  background-color: transparent !important; /* Ensures no gray background */
+}
+
+/* Internship Card Styling */
+.internshipCard {
+  flex: 1 1 45%; /* Makes them 2 in a row */
+  min-width: 320px;
+  width: 100%;
+  background-color: #0a0a0a; /* Fully black */
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: left;
+}
+
+.internshipCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(47, 134, 140, 0.5);
+}
+
+/* Styling for Card Content */
+.title {
+  font-size: 1.4rem;
+  color: #65a4b3;
+  font-size: 30px;
+}
+
+.company {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.duration {
+  font-size: 30px;
+  color: #ae1d1d;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Skill List */
+.skillsList {
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  gap: 15px; /* Space between items */
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Centers the items */
+  list-style: none; 
+cursor:pointer;
+}
+
+.skillsList li {
+  background: #222; /* Optional: Add a background */
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap; /* Prevents breaking into multiple lines */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .internshipContainer {
+    flex-direction: column;
+  }
+
+  .internshipCard {
+    width: 90%;
+    margin: auto;
+  }
+}
+

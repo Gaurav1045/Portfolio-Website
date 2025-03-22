@@ -1,0 +1,80 @@
+.skills {
+  text-align: center;
+  padding: 80px 50px;
+  border-radius: 20px;
+  background-color: #0a0a0a;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skills:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 25px rgba(19, 109, 106, 0.3);
+}
+
+.skills h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #00ff88;
+  background-color: #0a0a0a;
+}
+
+.card {
+  width: 200px; /* Adjusted width */
+  height: 200px; /* Adjusted height to make it circular */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30%; /* Makes the card circular */
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 10px 10px 40px rgba(29, 132, 136, 0.5);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 12px 25px rgba(41, 141, 141, 0.3);
+}
+
+.skillLogo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.skillName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e0e0e0; /* Light text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    width: 180px; /* Adjusted width for smaller screens */
+    height: 180px; /* Adjusted height for smaller screens */
+  }
+
+  .skills h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #65a4b3;
+  text-shadow: 0 0 10px rgba(36, 145, 143, 0.7);
+  width: 100%;
+  background-color: #0a0a0a;
+}

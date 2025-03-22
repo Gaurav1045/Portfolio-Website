@@ -1,0 +1,81 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  scroll-behavior: smooth;
+  background-color: #0a0a0a;
+}
+
+body {
+  background: #0a0a0a;
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* App Container */
+.app {
+  width: 100%;
+  max-width: 1280px;
+  background: rgba(26, 26, 26, 0.9);
+  border-radius: 20px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  margin: 20px;
+}
+
+/* Main Content */
+main {
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+/* Section Styling */
+section {
+  padding: 80px 50px;
+  border-radius: 20px;
+  background: rgba(30, 30, 30, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  scroll-margin-top: 100px;
+}
+
+section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
+
+  main {
+    padding: 20px;
+    gap: 60px;
+  }
+
+  section {
+    padding: 40px 20px;
+    scroll-margin-top: 80px;
+  }
+}
+
+/* Fix Header Overlapping */
+:target::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-top: -120px;
+}

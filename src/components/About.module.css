@@ -1,0 +1,163 @@
+.about {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  min-height: 80vh;
+  background-color: rgba(10, 10, 10, 0.9);
+  backdrop-filter: blur(10px);
+  color: #e0e0e0;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.about:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 30px rgba(62, 183, 179, 0.3);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  gap: 40px;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-width: 250px;
+}
+
+.profileImage {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #307d80;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.textContainer {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 38px;
+  text-align: left;
+  max-width: 700px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #00ff88;
+  scroll-margin-top: 120px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+ul li::before {
+  content: "•";
+  margin-right: 10px;
+  color: #00ff88;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+p.last {
+  margin-bottom: 50px;
+}
+
+strong {
+  color: #00ff88;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profileImage {
+    width: 200px;
+    height: 200px;
+  }
+
+  .textContainer {
+    text-align: center;
+    padding: 30px;
+  }
+}
+
+.heading {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #65a4b3;
+  text-shadow: 0 0 10px rgba(36, 145, 143, 0.7);
+  width: 100%;
+  background-color: #0a0a0a;
+}
+.downloadButton {
+  width: 40%;
+  padding: 8px 16px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffffff;
+  border: #0a0a0a;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  box-shadow: 0px 8px 15px rgba(27, 144, 144, 0.3);
+  margin: 0 auto; /* Center the button horizontally */
+  display: block; /* Makes sure the button takes the full width of its container */
+}
+
+.downloadButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 25px rgba(38, 62, 62, 0.3);
+  background-color: #000000; /* Darken background on hover */
+}
+
+.downloadButton:active {
+  transform: translateY(0);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.downloadButton:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0px 0px 5px 2px rgba(35, 133, 152, 0.5); /* Highlight with a glow on focus */
+}
+
+@media (max-width: 768px) {
+  .downloadButton {
+    width: 40%; /* Adjust width for mobile */
+  }
+}
