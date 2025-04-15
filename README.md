@@ -1,12 +1,71 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🚀 Portfolio Website — React + Vite
 
-Currently, two official plugins are available:
+This project is a minimal and blazing-fast setup using React with Vite for building a personal or professional portfolio website. It includes Hot Module Replacement (HMR), essential ESLint rules, and is fully customizable.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Tech Stack
 
-## Expanding the ESLint configuration
+- **React** — For building the user interface
+- **Vite** — For super fast development and optimized builds
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Setup Instructions
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/portfolio-website.git
+   cd portfolio-website
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+5. **Preview production build:**
+   ```bash
+   npm run preview
+   ```
+
+## 📁 Folder Structure
+
+```
+portfolio-website/
+├── public/
+├── src/
+│   ├── components/
+│   ├── assets/
+│   ├── App.jsx
+│   └── main.jsx
+├── .eslintrc.cjs
+├── vite.config.js
+└── index.html
+```
+
+## ✨ Features
+
+- ⚡ Lightning-fast development with Vite
+- 🔥 Instant HMR
+- 🧹 Pre-configured ESLint
+- 💡 Easily extendable for your portfolio content
+
+## 🙌 Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests for improvements.
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Let me know if you'd like to include badges, a live demo link, or social links in the README too!
