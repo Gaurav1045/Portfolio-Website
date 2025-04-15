@@ -43,6 +43,23 @@ portfolio-website/
 ├── public/
 ├── src/
 │   ├── components/
+         ├──  About.jsx
+         ├──  About.module.css
+         ├──  Certificate.jsx
+         ├──  Certificate.module.css
+         ├──  Contact.jsx
+         ├──  Contact.module.css
+         ├──  Footer.jsx
+         ├──  Footer.module.css
+         ├──  Header.jsx
+         ├──  Header.module.css
+         ├──  Internship.jsx
+         ├──  Internship.module.css
+         ├──  Projects.jsx
+         ├──  Projects.module.css
+         ├──  Skills.jsx
+         ├──  Skills.module.css
+│   ├── assets/
 │   ├── assets/
 │   ├── App.jsx
 │   └── main.jsx
